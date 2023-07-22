@@ -5,8 +5,6 @@ let todos = datas.todos();
 
 class checked {
     checkTodo=(todoId) => {
-      // eslint-disable-next-line no-alert
-      // eslint-disable-next-line no-unused-vars
       todos = todos.map((todo, index) => ({
         ...todo,
         completed: index === todoId ? !todo.completed : todo.completed,
@@ -16,8 +14,7 @@ class checked {
     }
 
     toDelete = () => {
-      // eslint-disable-next-line no-unused-vars
-      todos = todos.filter((todo, index) => todo.completed !== true);
+      todos = todos.filter((todo) => todo.completed !== true);
       todos = todos.map((todo, index) => ({
         ...todo,
         index: index + 1,
