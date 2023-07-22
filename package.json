@@ -6,9 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy":"gh-pages -d dist"
   },
   "keywords": [],
+  "homepage": "https://ethred.github.io/todolist",
   "author": "",
   "license": "ISC",
   "devDependencies": {
